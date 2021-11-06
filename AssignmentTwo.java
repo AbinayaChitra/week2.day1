@@ -25,9 +25,9 @@ public class AssignmentTwo {
 		driver.findElement(By.linkText("Contacts")).click();
 		driver.findElement(By.linkText("Find Contacts")).click();
 		driver.findElement(By.xpath("//span[text()='Email']")).click();
-		driver.findElement(By.className("emailAddress")).sendKeys("frozen3495@gmail.com");
-		//driver.findElement(By.xpath("//button[text()='Find Contacts']")).click();
-        driver.close();
+		driver.findElement(By.name("emailAddress")).sendKeys("frozen3495@gmail.com");
+		driver.findElement(By.xpath("//button[text()='Find Contacts']")).click();
+                driver.close();
 	}
 
 }
